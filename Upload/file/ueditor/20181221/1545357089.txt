@@ -1,0 +1,31 @@
+短信服务
+https://dysms.console.aliyun.com/dysms.htm?spm=5176.2020520154.aliyun_sidebar.146.593979d6ek2jl2#/overview
+风险识别
+https://yundunnext.console.aliyun.com/?spm=5176.cnsaf.0.0.577d346dNgqQMr&p=saf#/count
+云盾.态势感知
+https://yundunnext.console.aliyun.com/?spm=5176.2020520001.1007.1.6cfa4bd3sU1y8e&p=sas#/sas/vulManage?type=emergency
+云盾.风险识别
+https://yundun.console.aliyun.com/?spm=5176.2020520001.aliyun_sidebar.aliyun_sidebar_saf.17864bd34U8buV&p=saf#/count
+
+NAT网关文档
+https://help.aliyun.com/document_detail/42757.html?spm=5176.10422278.0.0.1fa77e8bdAMPZr
+
+
+阿里云策略
+rds单个库策略
+{
+  "Statement": [
+    {
+      "Action": "rds:*",
+      "Effect": "Allow",
+      "Resource": "acs:rds:*:*:dbinstance/rm-bp15585nh923xc9v2"
+    },
+    {
+      "Action": "rds:Describe*",
+      "Effect": "Allow",
+      "Resource": "*"
+    }
+  ],
+  "Version": "1"
+}
+oss单个策略

@@ -1,0 +1,19 @@
+{
+    "name": "blog",
+    "description": "the blog",
+    "type": "blog",
+    "keywords": ["blog","thinkphp","blog"],
+    "homepage": "http://zhangweijiang.com",
+    "license": "Apache2",
+    "authors": [
+        {
+            "name": "zhangweijiang",
+            "email": "982215226@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "minimum-stability": "dev"
+}
+
