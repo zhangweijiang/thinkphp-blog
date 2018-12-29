@@ -2,22 +2,16 @@
 ## 链接
 - 博客：http://zhangweijiang.com  
 - github：https://github.com/zhangweijiang/thinkphp-blog 
-
-
-## 简介
-闲暇之时使用thinkphp开发了一个个人博客用来整理技能知识；  
-
-如今博客的功能基本已经齐备；特开源以供各类猿们免费使用;  
-
-亦可以作为初学thinkphp的同学们的参考源代码；  
+ 
+ ## ThinkPHP3.2
+ 详细开发文档参考 [ThinkPHP3.2完全开发手册](http://document.thinkphp.cn/manual_3_2/get_thinkphp.html)
 
 ## 使用说明
-1. 请将项目内的所有文件直接放在根目录下；不要多层目录；  
-例如正确：www/;错误：www/thinkphp-blog/；
+1. 根目录配置到thinkphp-blog/下；
 2. 后台登录密码默认为admin；
 4. 若要允许百度爬虫抓取请把根目录下的robots.txt中的Disallow改为Allow；
 5. 可以在用户管理中；将第三方账号标记为站长；然后后台就必须使用第三方账号登录以增强安全性；
-
+6.新建一个数据库blog,将thinkphp-blog/data/blog.sql导入到数据库中
 ## 针对thinkphp的改进优化；
 1. 修复tinkphp的session设置周期无效的bug；
 2. 自定义标签 /Application/Common/Tag/My.class.php；
