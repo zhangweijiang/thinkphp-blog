@@ -139,6 +139,8 @@ class IndexController extends HomeBaseController {
             'cid'=>'git'
             );
         $this->assign($assign);
+        $data = D('Git')->getAllData();
+        $this->assign('data',$data);
         $this->display();
     }
 

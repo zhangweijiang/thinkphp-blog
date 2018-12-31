@@ -8,9 +8,9 @@ return array(
     'ADMIN_EMAIL'               =>  '982215226@qq.com',          // 站长邮箱
 
 //*************************************优化推广****************************************
-    'WEB_NAME'                  =>  '张伟江-技术博客 | php | web开发 | mysql |linux',             //网站名：
-    'WEB_KEYWORDS'              =>  '张伟江，博客系统，技术分享，thinkphp，laravel，linux，web开发，bootstrap，shell脚本',         //网站关键字
-    'WEB_DESCRIPTION'           =>  '张伟江博客是一个专注于php技术分享的博客网站。主要分享web网站开发，php，linux，mysql等学习经验。免费分享开源代码。',      //网站描述
+    'WEB_NAME'                  =>  '张伟江-个人博客  | 网站建设 | web开发 | php | linux',             //网站名：
+    'WEB_KEYWORDS'              =>  '张伟江，博客，php博客，个人博客，网站建设，网站模板，thinkphp，linux，web开发，shell脚本',         //网站关键字
+    'WEB_DESCRIPTION'           =>  '张伟江博客是一个专注于php技术分享，网站建设的博客网站。主要分享web网站开发，php，linux，mysql等学习经验。免费开源网站模板。',      //网站描述
     'AUTHOR'                    =>  '张伟江',               //默认作者
     'COPYRIGHT_WORD'            =>  '本文为张伟江原创文章，转载无需和我联系，但请注明来自<a href="http://www.zhangweijiang.com">张伟江博客</a>http://zhangweijiang.com',       //文章保留版权提示
     'IMAGE_TITLE_ALT_WORD'      =>  '张伟江博客', //图片默认title和alt

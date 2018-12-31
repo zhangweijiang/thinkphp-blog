@@ -37,6 +37,7 @@ class My extends TagLib {
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/font-awesome-4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/css/bjy.css">
     <link rel="stylesheet" type="text/css" href="__HOME_CSS__/index.css">
+    <link type="image/x-icon" href="https://www.integrity.com.cn/logo-lg.png" rel="icon">
 php;
         return $link;
     }

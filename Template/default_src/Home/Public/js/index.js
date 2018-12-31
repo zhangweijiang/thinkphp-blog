@@ -57,6 +57,7 @@ $(function(){
         $(val).attr('src', img);
     });
 
+
 })
 
 /**

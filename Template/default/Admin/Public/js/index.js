@@ -1,1 +1,41 @@
-"use strict";$(function(){$("#nav-top .nt-nav li").click(function(n){var e=$(this).index();$(this).addClass("ntn-active").siblings("li").removeClass("ntn-active"),$("#nav-left .nl-con").eq(e).addClass("nl-show").siblings(".nl-con").removeClass("nl-show"),$("#nav-left .nl-con").eq(e).find("dd").eq(0).click();var i=$("#nav-left .nl-con").eq(e).find("a").attr("href");$("#content-iframe").attr("src",i)}),$("#nav-left .nl-con dd").click(function(n){$(".nl-checked").hide(),$(this).find(".nl-checked").show()})});
+var _0x407e = [
+    'nl-show',
+    'find',
+    'attr',
+    'href',
+    '#content-iframe',
+    'src',
+    '#nav-left\x20.nl-con\x20dd',
+    '.nl-checked',
+    'hide',
+    'show',
+    'click',
+    'addClass',
+    'ntn-active',
+    'removeClass',
+    '#nav-left\x20.nl-con',
+    '.nl-con'
+];
+(function (_0x18b769, _0x28c829) {
+    var _0x13ad74 = function (_0x159e65) {
+        while (--_0x159e65) {
+            _0x18b769['push'](_0x18b769['shift']());
+        }
+    };
+    _0x13ad74(++_0x28c829);
+}(_0x407e, 0x14a));
+var _0x2d81 = function (_0x39722f, _0x221c02) {
+    _0x39722f = _0x39722f - 0x0;
+    var _0x5564f6 = _0x407e[_0x39722f];
+    return _0x5564f6;
+};
+$(function () {
+    $('#nav-top\x20.nt-nav\x20li')[_0x2d81('0x0')](function (_0x464985) {
+        var _0x373c37 = $(this)['index']();
+        $(this)[_0x2d81('0x1')](_0x2d81('0x2'))['siblings']('li')[_0x2d81('0x3')]('ntn-active'), $(_0x2d81('0x4'))['eq'](_0x373c37)['addClass']('nl-show')['siblings'](_0x2d81('0x5'))['removeClass'](_0x2d81('0x6')), $(_0x2d81('0x4'))['eq'](_0x373c37)[_0x2d81('0x7')]('dd')['eq'](0x0)[_0x2d81('0x0')]();
+        var _0x5d6c44 = $(_0x2d81('0x4'))['eq'](_0x373c37)[_0x2d81('0x7')]('a')[_0x2d81('0x8')](_0x2d81('0x9'));
+        $(_0x2d81('0xa'))['attr'](_0x2d81('0xb'), _0x5d6c44);
+    }), $(_0x2d81('0xc'))['click'](function (_0x1afc72) {
+        $(_0x2d81('0xd'))[_0x2d81('0xe')](), $(this)['find'](_0x2d81('0xd'))[_0x2d81('0xf')]();
+    });
+});
