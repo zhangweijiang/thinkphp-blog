@@ -8,6 +8,8 @@ class IndexController extends HomeBaseController {
 
     // 首页
     public function index(){
+
+
         $articles=D('Article')->getPageData();
         $assign=array(
             'articles'=>$articles['data'],

@@ -85,7 +85,9 @@
 
 <js file="__PUBLIC__/static/layer-2.4/layer.js"/><js file="__PUBLIC__/static/js/prism.js" />
 <js file="__PUBLIC__/static/layer-2.4/layer.js" />
+<js file="__PUBLIC__/static/js/previewImage.js" />
 <script type="text/javascript">
+
     ajaxCommentUrl="{:U('Home/Index/ajax_comment','','',true)}";
     check_login="{:U('Home/User/check_login','','',true)}";
     $(document).ready(function(){
@@ -101,6 +103,31 @@
         });
     });
 </script>
+<script>
+
+
+
+    var urls = [];
+    $('.b-content-word img').each(function(){
+        urls.push($(this).attr('src'));
+    });
+
+    $('.b-content-word').on('click','img',function(){
+        var current = $(this).attr('src');
+        var obj = {
+            urls : urls,
+            current : current
+        };
+        previewImage.start(obj);
+    });
+
+</script>
+
+<script>
+    //显示行号
+    $('pre').addClass("line-numbers").css("white-space", "pre-wrap");
+</script>
+
 <js file="__HOME_JS__/comment.js" />
 </body>
 </html>

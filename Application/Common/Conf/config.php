@@ -24,8 +24,8 @@ return array(
         'use_only_cookies'  =>  0,                            //是否只开启基于cookies的session的会话方式
     ),
 //***********************************URL*************************************
-    'URL_MODEL'             =>  1,                            // 为了兼容性更好而设置成1 如果确认服务器开启了mod_rewrite 请设置为 2
+    'URL_MODEL'             =>  2,                            // 为了兼容性更好而设置成1 如果确认服务器开启了mod_rewrite 请设置为 2
     'URL_CASE_INSENSITIVE'  =>  false,                        // 区分url大小写
 //***********************************其他设置*********************************
-    'THINK_INFORMATION'     =>  '1.1',                        // bjyblog版本
+    'THINK_INFORMATION'     =>  '1.1',                        // blog版本
 );

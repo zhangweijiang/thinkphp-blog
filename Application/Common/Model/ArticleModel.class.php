@@ -49,11 +49,10 @@ class ArticleModel extends BaseModel{
         $image_title_alt_word=C('IMAGE_TITLE_ALT_WORD');
         if(!empty($image_title_alt_word)){
             // 修改图片默认的title和alt
-            $data['content']=preg_replace('/title=\"(?<=").*?(?=")\"/','title="白俊遥博客"',$data['content']);
-            $data['content']=preg_replace('/alt=\"(?<=").*?(?=")\"/','alt="白俊遥博客"',$data['content']);
+            $data['content']=preg_replace('/title=\"(?<=").*?(?=")\"/','title="张伟江遥博客"',$data['content']);
+            $data['content']=preg_replace('/alt=\"(?<=").*?(?=")\"/','alt="张伟江博客"',$data['content']);
         }
-        // 将绝对路径转换为相对路径
-        $data['content']=preg_replace('/src=\"^\/.*\/Upload\/image\/ueditor$/','src="/Upload/image/ueditor',$data['content']);
+
         // 转义
         $data['content']=htmlspecialchars($data['content']);
         if($this->create($data)){
@@ -109,11 +108,10 @@ class ArticleModel extends BaseModel{
         $image_title_alt_word=C('IMAGE_TITLE_ALT_WORD');
         if(!empty($image_title_alt_word)){
             // 修改图片默认的title和alt
-            $data['content']=preg_replace('/title=\"(?<=").*?(?=")\"/','title="白俊遥博客"',$data['content']);
-            $data['content']=preg_replace('/alt=\"(?<=").*?(?=")\"/','alt="白俊遥博客"',$data['content']);
+            $data['content']=preg_replace('/title=\"(?<=").*?(?=")\"/','title="张伟江博客"',$data['content']);
+            $data['content']=preg_replace('/alt=\"(?<=").*?(?=")\"/','alt="张伟江博客"',$data['content']);
         }
-        // 将绝对路径转换为相对路径
-        $data['content']=preg_replace('/src=\"^\/.*\/Upload\/image\/ueditor$/','src="/Upload/image/ueditor',$data['content']);
+
         $data['content']=htmlspecialchars($data['content']);
         if($this->create($data)){
             $aid=$data['aid'];
