@@ -7,7 +7,7 @@
     <icheckcss />
 </head>
 <body>
-<form class="form-group" action="{:U('Admin/Article/edit',array('aid'=>$_GET['aid']))}" method="post">
+<form class="form-group" action="{:U('Admin/Article/edit',array('aid'=>$_GET['aid']))}" method="post" enctype="multipart/form-data">
     <input type="hidden" name="aid" value="{$data['aid']}">
     <table class="table table-bordered table-striped table-hover table-condensed">
         <tr>
@@ -36,6 +36,12 @@
             <th>作者</th>
             <td>
                 <input class="form-control modal-sm" type="text" name="author" value="{$data['author']}">
+            </td>
+        </tr>
+        <tr>
+            <th>图片</th>
+            <td>
+                <input class="form-control modal-sm" type="file" name="image">
             </td>
         </tr>
         <tr>

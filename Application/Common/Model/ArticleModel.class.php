@@ -43,6 +43,24 @@ class ArticleModel extends BaseModel{
     public function addData(){
         // 获取post数据
         $data=I('post.');
+
+        //资讯图片上传
+        if($_FILES['image']['name']){
+            $upload = new \Think\Upload();// 实例化上传类
+            $upload->maxSize   =     3145728 ;// 设置附件上传大小
+            $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+            $upload->rootPath  =     './Upload/'; // 设置附件上传根目录
+            $upload->savePath  =     'image/article/'; // 设置附件上传（子）目录
+            // 上传文件
+            $info   =   $upload->upload();
+            if(!$info) {// 上传错误提示错误信息
+                return false;
+            }
+            $data['image'] = '/Upload/'.$info['image']['savepath'].'/'.$info['image']['savename'];
+
+        }
+
+
         // 反转义为下文的 preg_replace使用
         $data['content']=htmlspecialchars_decode($data['content']);
         // 判断是否修改文章中图片的默认的alt 和title
@@ -102,6 +120,22 @@ class ArticleModel extends BaseModel{
     public function editData(){
         // 获取post数据
         $data=I('post.');
+        //资讯图片上传
+        if($_FILES['image']['name']){
+            $upload = new \Think\Upload();// 实例化上传类
+            $upload->maxSize   =     3145728 ;// 设置附件上传大小
+            $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+            $upload->rootPath  =     './Upload/'; // 设置附件上传根目录
+            $upload->savePath  =     'image/article/'; // 设置附件上传（子）目录
+            // 上传文件
+            $info   =   $upload->upload();
+            if(!$info) {// 上传错误提示错误信息
+                return false;
+            }
+            $data['image'] = '/Upload/'.$info['image']['savepath'].'/'.$info['image']['savename'];
+
+        }
+
         // 反转义为下文的 preg_replace使用
         $data['content']=htmlspecialchars_decode($data['content']);
         // 判断是否修改文章中图片的默认的alt 和title

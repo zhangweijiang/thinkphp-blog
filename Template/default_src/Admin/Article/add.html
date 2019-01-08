@@ -7,7 +7,7 @@
     <icheckcss />
 </head>
 <body>
-<form class="form-group" action="{:U('Admin/Article/add')}" method="post">
+<form class="form-group" action="{:U('Admin/Article/add')}" method="post" enctype="multipart/form-data">
     <table class="table table-bordered table-striped table-hover table-condensed">
         <tr>
             <th width="80px">所属分类</th>
@@ -29,6 +29,12 @@
             <th>作者</th>
             <td>
                 <input class="form-control modal-sm" type="text" name="author" value="{$Think.config.AUTHOR}">
+            </td>
+        </tr>
+        <tr>
+            <th>图片</th>
+            <td>
+                <input class="form-control modal-sm" type="file" name="image">
             </td>
         </tr>
         <tr>
