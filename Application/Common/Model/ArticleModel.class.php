@@ -70,7 +70,6 @@ class ArticleModel extends BaseModel{
             $data['content']=preg_replace('/title=\"(?<=").*?(?=")\"/','title="张伟江遥博客"',$data['content']);
             $data['content']=preg_replace('/alt=\"(?<=").*?(?=")\"/','alt="张伟江博客"',$data['content']);
         }
-
         // 转义
         $data['content']=htmlspecialchars($data['content']);
         if($this->create($data)){
@@ -103,7 +102,7 @@ class ArticleModel extends BaseModel{
                 // 生成sitemap文件
                 $sitemap = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<urlset>\r\n";
                 foreach($list as $k=>$v){
-                    $sitemap .= "    <url>\r\n"."        <loc>".U('Home/Index/article',array('aid'=>$v['aid']),'',true)."</loc>\r\n"."        <lastmod>".date('Y-m-d',$v['addtime'])."</lastmod>\r\n        <changefreq>weekly</changefreq>\r\n        <priority>0.8</priority>\r\n    </url>\r\n";
+                    $sitemap .= "    <url>\r\n"."        <loc>".U('Home/Index/article',array('aid'=>$v['aid']),true,true)."</loc>\r\n"."        <lastmod>".date('Y-m-d',$v['addtime'])."</lastmod>\r\n        <changefreq>weekly</changefreq>\r\n        <priority>0.8</priority>\r\n    </url>\r\n";
                 }
                 $sitemap .= '</urlset>';
                 file_put_contents('./sitemap.xml',$sitemap);
@@ -365,7 +364,7 @@ class ArticleModel extends BaseModel{
             ->select();
         foreach ($list as $k => $v) {
             $list[$k]['pic_path']=D('ArticlePic')->getDataByAid($v['aid']);
-            $list[$k]['url']=U('Home/Index/article/',array('search_word'=>$search_word,'aid'=>$v['aid']));
+            $list[$k]['url']=U('Home/Index/article/',array('aid'=>$v['aid']));
             $list[$k]['tids']=D('ArticleTag')->getDataByAid($v['aid']);
             $list[$k]['tag']=D('ArticleTag')->getDataByAid($v['aid'],'all');
             $list[$k]['category']=current(D('Category')->getDataByCid($v['cid'],'cid,cid,cname,keywords'));

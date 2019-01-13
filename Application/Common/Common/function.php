@@ -337,14 +337,22 @@ function RU($url){
         $url=str_replace('/Home/Index', '', $url);
         $url=str_replace('/p', '', $url);
     }
+
     // 兼容 chat
-    if($url=='/Home/Index/chat'){
-        $url='/chat';
+    if(preg_match('/\/Home\/Index\/chat/', $url)){
+        $url=str_replace('/Home/Index', '', $url);
     }
+
     // 兼容 git
-    if($url=='/Home/Index/git'){
-        $url='/git';
+    if(preg_match('/\/Home\/Index\/git/', $url)){
+        $url=str_replace('/Home/Index', '', $url);
     }
+
+    //兼容搜索
+    if(preg_match('/\/Home\/Index\/search/i', $url)){
+        $url=str_replace('/Home/Index', '', $url);
+    }
+
     return $url;
 }
 

@@ -1,52 +1,67 @@
-var _0x1281 = [
-    '#b-login-word\x20.b-nickname',
+var _0x46d2 = [
+    'parents',
+    '.b-box-textarea',
+    'find',
+    '.b-box-content',
+    '请先登录后发表评论',
+    'aid',
+    'attr',
+    'pid',
+    'val',
+    'load',
+    'username',
+    'getFullYear',
+    'getMonth',
+    '&emsp;',
+    'getHours',
+    'getSeconds',
+    '#b-login-word\x20.b-head_img',
+    'text',
     '<div\x20class=\x22row\x20b-user\x20b-parent\x22><div\x20class=\x22col-xs-2\x20col-sm-1\x20col-md-1\x20col-lg-1\x20b-pic-col\x22><img\x20title=\x22白俊遥博客\x22\x20alt=\x22白俊遥博客\x22\x20src=\x22',
-    '\x22\x20class=\x22b-user-pic\x22></div><div\x20class=\x22col-xs-10\x20col-sm-11\x20col-md-11\x20col-lg-11\x20b-content-col\x22><p\x20class=\x22b-content\x22><span\x20class=\x22b-user-name\x22>',
     '</span>：',
     '</p><p\x20class=\x22b-date\x22>',
+    '\x20<a\x20onclick=\x22reply(this)\x22\x20username=\x22',
     '\x22\x20pid=\x22',
     '\x22\x20aid=\x22',
     '\x22\x20href=\x22javascript:;\x22>回复</a></p><div\x20class=\x22b-clear-float\x22></div></div></div>',
+    '.b-user-comment',
     'prepend',
     '<div\x20class=\x22row\x20b-user\x20b-child\x22><div\x20class=\x22col-xs-2\x20col-sm-1\x20col-md-1\x20col-lg-1\x20b-pic-col\x22><img\x20title=\x22白俊遥博客\x22\x20alt=\x22白俊遥博客\x22\x20src=\x22',
-    '\x22\x20class=\x22b-user-pic\x22></div><ul\x20class=\x22col-xs-10\x20col-sm-11\x20col-md-11\x20col-lg-11\x20b-content-col\x22><li\x20class=\x22b-content\x22><span\x20class=\x22b-reply-name\x22>',
-    '</span><span\x20class=\x22b-reply\x22>回复</span><span\x20class=\x22b-user-name\x22>',
-    '</li><li\x20class=\x22b-date\x22>',
     '\x20<a\x20onclick=\x22reply(this)\x22\x20pid=\x22',
+    '\x22\x20href=\x22javascript:;\x22>回复</a></li><li\x20class=\x22b-clear-float\x22></li></ul></div>',
     '.b-content-col',
-    'append',
     'remove',
-    '.b-box-content',
-    'html',
-    'show',
-    '.b-user-comment',
-    'username',
+    'closeAll',
+    '#b-modal-login',
+    'modal',
     '<div\x20class=\x22b-box-textarea\x22><div\x20class=\x22b-box-content\x22\x20contenteditable=\x22true\x22\x20onfocus=\x22delete_hint(this)\x22>请先登录后回复评论</div><ul\x20class=\x22b-emote-submit\x22><li\x20class=\x22b-emote\x22><i\x20class=\x22fa\x20fa-smile-o\x22\x20onclick=\x22getTuzki(this)\x22></i><input\x20class=\x22form-control\x20b-email\x22\x20type=\x22text\x22\x20name=\x22email\x22\x20placeholder=\x22接收回复的email地址\x22\x20value=\x22',
-    '\x22\x20username=\x22',
     '.b-cc-first',
-    'text',
+    '请先登录后回复评论',
     'css',
-    'click',
+    'color',
     '.b-tuzki\x20img',
     'prop',
     'outerHTML',
     'focus',
-    'siblings',
+    '.b-tuzki',
+    'show',
     'Kiss',
     'Love',
     'Yeah',
+    '生日快乐',
     '星星闪',
-    '也不行',
+    '正Music',
     '撞墙至死',
-    '砍死你',
+    '互相拍砖',
+    '扔桌子',
+    '少林寺',
     '什么？',
     '我爱牛奶',
-    '<img\x20src=\x22http://',
+    '在笼子里',
     'location',
-    'host',
-    '/Public/emote/tuzki/t_',
     '.gif\x22\x20title=\x22',
-    '\x22\x20alt=\x22白俊遥博客\x22>',
+    'html',
+    'hide',
     'toString',
     'length',
     'getSelection',
@@ -54,7 +69,6 @@ var _0x1281 = [
     'rangeCount',
     'createElement',
     'div',
-    'innerHTML',
     'createDocumentFragment',
     'firstChild',
     'appendChild',
@@ -63,49 +77,32 @@ var _0x1281 = [
     'setStartAfter',
     'collapse',
     'removeAllRanges',
-    'addRange',
-    'Control',
     'selection',
-    'type',
-    'pasteHTML',
-    'post',
-    '.b-box-textarea',
-    'find',
-    '请先登录后发表评论',
-    'attr',
-    'aid',
-    'pid',
-    'parents',
-    'input[name=\x27email\x27]',
-    'getFullYear',
-    'getMonth',
-    'getDate',
-    'getMinutes',
-    'getSeconds',
-    '#b-login-word\x20.b-head_img',
-    'src'
+    'Control',
+    'createRange',
+    'post'
 ];
-(function (_0x53583e, _0x386630) {
-    var _0x3e3e29 = function (_0x3af9f8) {
-        while (--_0x3af9f8) {
-            _0x53583e['push'](_0x53583e['shift']());
+(function (_0x11f2ac, _0x1e7d97) {
+    var _0x49fd06 = function (_0x328ddc) {
+        while (--_0x328ddc) {
+            _0x11f2ac['push'](_0x11f2ac['shift']());
         }
     };
-    _0x3e3e29(++_0x386630);
-}(_0x1281, 0x11f));
-var _0x55cd = function (_0x317374, _0x553b4a) {
-    _0x317374 = _0x317374 - 0x0;
-    var _0x5245e7 = _0x1281[_0x317374];
-    return _0x5245e7;
+    _0x49fd06(++_0x1e7d97);
+}(_0x46d2, 0x122));
+var _0x33ec = function (_0x5b670f, _0x1cd648) {
+    _0x5b670f = _0x5b670f - 0x0;
+    var _0x39c870 = _0x46d2[_0x5b670f];
+    return _0x39c870;
 };
-function getTuzki(_0x3ced5b) {
-    var _0x1b9428 = $(_0x3ced5b)[_0x55cd('0x0')]('.b-tuzki');
+function getTuzki(_0x55af5a) {
+    var _0x2cb9e6 = $(_0x55af5a)['siblings'](_0x33ec('0x0'));
     if (tuzkiNumber) {
-        _0x1b9428['show']();
-        for (var _0x4b7f0d = [
-                    _0x55cd('0x1'),
-                    _0x55cd('0x2'),
-                    _0x55cd('0x3'),
+        _0x2cb9e6[_0x33ec('0x1')]();
+        for (var _0x2a8c83 = [
+                    _0x33ec('0x2'),
+                    _0x33ec('0x3'),
+                    _0x33ec('0x4'),
                     '啊！',
                     '背扭',
                     '顶',
@@ -116,98 +113,98 @@ function getTuzki(_0x3ced5b) {
                     '鲁拉',
                     '拍砖',
                     '揉脸',
-                    '生日快乐',
+                    _0x33ec('0x5'),
                     '摊手',
                     '睡觉',
                     '瘫坐',
                     '无聊',
-                    _0x55cd('0x4'),
+                    _0x33ec('0x6'),
                     '旋转',
-                    _0x55cd('0x5'),
+                    '也不行',
                     '郁闷',
-                    '正Music',
+                    _0x33ec('0x7'),
                     '抓墙',
-                    _0x55cd('0x6'),
+                    _0x33ec('0x8'),
                     '歪头',
                     '戳眼',
                     '飘过',
-                    '互相拍砖',
-                    _0x55cd('0x7'),
-                    '扔桌子',
-                    '少林寺',
-                    _0x55cd('0x8'),
+                    _0x33ec('0x9'),
+                    '砍死你',
+                    _0x33ec('0xa'),
+                    _0x33ec('0xb'),
+                    _0x33ec('0xc'),
                     '转头',
-                    _0x55cd('0x9'),
+                    _0x33ec('0xd'),
                     '我踢',
                     '摇晃',
                     '晕厥',
-                    '在笼子里',
+                    _0x33ec('0xe'),
                     '震荡'
-                ], _0x3af88c = '', _0x955213 = 0x1; _0x955213 < 0x29; _0x955213++) {
-            var _0x3592df = formatNum(_0x955213, 0x4);
-            _0x3af88c += _0x55cd('0xa') + window[_0x55cd('0xb')][_0x55cd('0xc')] + _0x55cd('0xd') + _0x3592df + _0x55cd('0xe') + _0x4b7f0d[_0x955213 - 0x1] + _0x55cd('0xf');
+                ], _0x375c31 = '', _0x115cf0 = 0x1; _0x115cf0 < 0x29; _0x115cf0++) {
+            var _0x488ffb = formatNum(_0x115cf0, 0x4);
+            _0x375c31 += '<img\x20src=\x22http://' + window[_0x33ec('0xf')]['host'] + '/Public/emote/tuzki/t_' + _0x488ffb + _0x33ec('0x10') + _0x2a8c83[_0x115cf0 - 0x1] + '\x22\x20alt=\x22白俊遥博客\x22>';
         }
-        _0x1b9428['html'](_0x3af88c), tuzkiNumber = 0x0;
+        _0x2cb9e6[_0x33ec('0x11')](_0x375c31), tuzkiNumber = 0x0;
     } else
-        _0x1b9428['hide'](), tuzkiNumber = 0x1;
+        _0x2cb9e6[_0x33ec('0x12')](), tuzkiNumber = 0x1;
 }
-function formatNum(_0x130d9b, _0x536d76) {
-    for (var _0x41a13c = '', _0x232623 = 0x1; _0x232623 <= _0x536d76 - _0x130d9b[_0x55cd('0x10')]()[_0x55cd('0x11')]; _0x232623++)
-        _0x41a13c += '0';
-    return _0x41a13c + _0x130d9b;
+function formatNum(_0x4a7747, _0x197f44) {
+    for (var _0x99cc28 = '', _0x4acca1 = 0x1; _0x4acca1 <= _0x197f44 - _0x4a7747[_0x33ec('0x13')]()[_0x33ec('0x14')]; _0x4acca1++)
+        _0x99cc28 += '0';
+    return _0x99cc28 + _0x4a7747;
 }
-function insertHtmlAtCaret(_0xbd5553) {
-    var _0x11b241, _0x80f54e;
-    if (window['getSelection']) {
-        if (_0x11b241 = window[_0x55cd('0x12')](), _0x11b241[_0x55cd('0x13')] && _0x11b241[_0x55cd('0x14')]) {
-            _0x80f54e = _0x11b241[_0x55cd('0x13')](0x0), _0x80f54e['deleteContents']();
-            var _0x40a463 = document[_0x55cd('0x15')](_0x55cd('0x16'));
-            _0x40a463[_0x55cd('0x17')] = _0xbd5553;
-            for (var _0x4de73d, _0x294a8a, _0x51dcc8 = document[_0x55cd('0x18')](); _0x4de73d = _0x40a463[_0x55cd('0x19')];)
-                _0x294a8a = _0x51dcc8[_0x55cd('0x1a')](_0x4de73d);
-            _0x80f54e[_0x55cd('0x1b')](_0x51dcc8), _0x294a8a && (_0x80f54e = _0x80f54e[_0x55cd('0x1c')](), _0x80f54e[_0x55cd('0x1d')](_0x294a8a), _0x80f54e[_0x55cd('0x1e')](!0x0), _0x11b241[_0x55cd('0x1f')](), _0x11b241[_0x55cd('0x20')](_0x80f54e));
+function insertHtmlAtCaret(_0x494c40) {
+    var _0x458227, _0x124b6c;
+    if (window[_0x33ec('0x15')]) {
+        if (_0x458227 = window['getSelection'](), _0x458227[_0x33ec('0x16')] && _0x458227[_0x33ec('0x17')]) {
+            _0x124b6c = _0x458227['getRangeAt'](0x0), _0x124b6c['deleteContents']();
+            var _0x235110 = document[_0x33ec('0x18')](_0x33ec('0x19'));
+            _0x235110['innerHTML'] = _0x494c40;
+            for (var _0x2e6bd1, _0x20bb22, _0x41bf97 = document[_0x33ec('0x1a')](); _0x2e6bd1 = _0x235110[_0x33ec('0x1b')];)
+                _0x20bb22 = _0x41bf97[_0x33ec('0x1c')](_0x2e6bd1);
+            _0x124b6c[_0x33ec('0x1d')](_0x41bf97), _0x20bb22 && (_0x124b6c = _0x124b6c[_0x33ec('0x1e')](), _0x124b6c[_0x33ec('0x1f')](_0x20bb22), _0x124b6c[_0x33ec('0x20')](!0x0), _0x458227[_0x33ec('0x21')](), _0x458227['addRange'](_0x124b6c));
         }
     } else
-        document['selection'] && _0x55cd('0x21') != document[_0x55cd('0x22')][_0x55cd('0x23')] && document[_0x55cd('0x22')]['createRange']()[_0x55cd('0x24')](_0xbd5553);
+        document[_0x33ec('0x22')] && _0x33ec('0x23') != document[_0x33ec('0x22')]['type'] && document[_0x33ec('0x22')][_0x33ec('0x24')]()['pasteHTML'](_0x494c40);
 }
-function comment(_0x8eeaf8) {
-    $[_0x55cd('0x25')](check_login, function (_0x19c618) {
-        if (0x1 == _0x19c618) {
-            var _0x3d9172 = $(_0x8eeaf8)['parents'](_0x55cd('0x26'))['eq'](0x0)[_0x55cd('0x27')]('.b-box-content')['html']();
-            if ('' != _0x3d9172 && _0x55cd('0x28') != _0x3d9172) {
-                var _0x5cd1b4 = $(_0x8eeaf8)[_0x55cd('0x29')](_0x55cd('0x2a')), _0x4522b5 = $(_0x8eeaf8)[_0x55cd('0x29')](_0x55cd('0x2b')), _0x54f199 = $(_0x8eeaf8)[_0x55cd('0x2c')](_0x55cd('0x26'))['eq'](0x0)[_0x55cd('0x27')](_0x55cd('0x2d'))['val'](), _0xc851f9 = {
-                        'aid': _0x5cd1b4,
-                        'pid': _0x4522b5,
-                        'content': _0x3d9172,
-                        'email': _0x54f199
+function comment(_0x56d3c3) {
+    $[_0x33ec('0x25')](check_login, function (_0xe1a052) {
+        if (0x1 == _0xe1a052) {
+            var _0x3db169 = $(_0x56d3c3)[_0x33ec('0x26')](_0x33ec('0x27'))['eq'](0x0)[_0x33ec('0x28')](_0x33ec('0x29'))[_0x33ec('0x11')]();
+            if ('' != _0x3db169 && _0x33ec('0x2a') != _0x3db169) {
+                var _0x2a199b = $(_0x56d3c3)['attr'](_0x33ec('0x2b')), _0x54156d = $(_0x56d3c3)[_0x33ec('0x2c')](_0x33ec('0x2d')), _0x57f7e9 = $(_0x56d3c3)[_0x33ec('0x26')]('.b-box-textarea')['eq'](0x0)[_0x33ec('0x28')]('input[name=\x27email\x27]')[_0x33ec('0x2e')](), _0x23ed5d = {
+                        'aid': _0x2a199b,
+                        'pid': _0x54156d,
+                        'content': _0x3db169,
+                        'email': _0x57f7e9
                     };
-                layer['load'](0x1), $[_0x55cd('0x25')](ajaxCommentUrl, _0xc851f9, function (_0x19c618) {
-                    var _0x54f199 = _0x19c618, _0xc851f9 = $(_0x8eeaf8)[_0x55cd('0x29')]('username'), _0x499139 = new Date(), _0x20c4db = _0x499139[_0x55cd('0x2e')]() + '-' + (_0x499139[_0x55cd('0x2f')]() + 0x1 < 0xa ? '0' : '') + (_0x499139['getMonth']() + 0x1) + '-' + (_0x499139['getDate']() < 0xa ? '0' : '') + _0x499139[_0x55cd('0x30')]() + '&emsp;' + (_0x499139['getHours']() < 0xa ? '0' : '') + _0x499139['getHours']() + ':' + (_0x499139[_0x55cd('0x31')]() < 0xa ? '0' : '') + _0x499139[_0x55cd('0x31')]() + ':' + (_0x499139['getSeconds']() < 0xa ? '0' : '') + _0x499139[_0x55cd('0x32')](), _0x532140 = $(_0x55cd('0x33'))['attr'](_0x55cd('0x34')), _0x7c5158 = $(_0x55cd('0x35'))['text']();
-                    if (0x0 == _0x4522b5) {
-                        var _0x2cf42a = _0x55cd('0x36') + _0x532140 + _0x55cd('0x37') + _0x7c5158 + _0x55cd('0x38') + _0x3d9172 + _0x55cd('0x39') + _0x20c4db + '\x20<a\x20onclick=\x22reply(this)\x22\x20username=\x22' + _0x7c5158 + _0x55cd('0x3a') + _0x54f199 + _0x55cd('0x3b') + _0x5cd1b4 + _0x55cd('0x3c');
-                        $('.b-user-comment')[_0x55cd('0x3d')](_0x2cf42a);
+                layer[_0x33ec('0x2f')](0x1), $[_0x33ec('0x25')](ajaxCommentUrl, _0x23ed5d, function (_0xe1a052) {
+                    var _0x57f7e9 = _0xe1a052, _0x23ed5d = $(_0x56d3c3)[_0x33ec('0x2c')](_0x33ec('0x30')), _0x41c12a = new Date(), _0x304737 = _0x41c12a[_0x33ec('0x31')]() + '-' + (_0x41c12a[_0x33ec('0x32')]() + 0x1 < 0xa ? '0' : '') + (_0x41c12a[_0x33ec('0x32')]() + 0x1) + '-' + (_0x41c12a['getDate']() < 0xa ? '0' : '') + _0x41c12a['getDate']() + _0x33ec('0x33') + (_0x41c12a[_0x33ec('0x34')]() < 0xa ? '0' : '') + _0x41c12a[_0x33ec('0x34')]() + ':' + (_0x41c12a['getMinutes']() < 0xa ? '0' : '') + _0x41c12a['getMinutes']() + ':' + (_0x41c12a[_0x33ec('0x35')]() < 0xa ? '0' : '') + _0x41c12a[_0x33ec('0x35')](), _0x271638 = $(_0x33ec('0x36'))[_0x33ec('0x2c')]('src'), _0x4596a6 = $('#b-login-word\x20.b-nickname')[_0x33ec('0x37')]();
+                    if (0x0 == _0x54156d) {
+                        var _0x62cf46 = _0x33ec('0x38') + _0x271638 + '\x22\x20class=\x22b-user-pic\x22></div><div\x20class=\x22col-xs-10\x20col-sm-11\x20col-md-11\x20col-lg-11\x20b-content-col\x22><p\x20class=\x22b-content\x22><span\x20class=\x22b-user-name\x22>' + _0x4596a6 + _0x33ec('0x39') + _0x3db169 + _0x33ec('0x3a') + _0x304737 + _0x33ec('0x3b') + _0x4596a6 + _0x33ec('0x3c') + _0x57f7e9 + _0x33ec('0x3d') + _0x2a199b + _0x33ec('0x3e');
+                        $(_0x33ec('0x3f'))[_0x33ec('0x40')](_0x62cf46);
                     } else {
-                        var _0x2cf42a = _0x55cd('0x3e') + _0x532140 + _0x55cd('0x3f') + _0x7c5158 + _0x55cd('0x40') + _0xc851f9 + _0x55cd('0x38') + _0x3d9172 + _0x55cd('0x41') + _0x20c4db + _0x55cd('0x42') + _0x54f199 + '\x22\x20aid=\x22' + _0x5cd1b4 + '\x22\x20username=\x22' + _0xc851f9 + '\x22\x20href=\x22javascript:;\x22>回复</a></li><li\x20class=\x22b-clear-float\x22></li></ul></div>';
-                        $(_0x8eeaf8)[_0x55cd('0x2c')](_0x55cd('0x43'))['eq'](0x0)[_0x55cd('0x44')](_0x2cf42a), $(_0x8eeaf8)[_0x55cd('0x2c')](_0x55cd('0x26'))['eq'](0x0)[_0x55cd('0x45')]();
+                        var _0x62cf46 = _0x33ec('0x41') + _0x271638 + '\x22\x20class=\x22b-user-pic\x22></div><ul\x20class=\x22col-xs-10\x20col-sm-11\x20col-md-11\x20col-lg-11\x20b-content-col\x22><li\x20class=\x22b-content\x22><span\x20class=\x22b-reply-name\x22>' + _0x4596a6 + '</span><span\x20class=\x22b-reply\x22>回复</span><span\x20class=\x22b-user-name\x22>' + _0x23ed5d + _0x33ec('0x39') + _0x3db169 + '</li><li\x20class=\x22b-date\x22>' + _0x304737 + _0x33ec('0x42') + _0x57f7e9 + _0x33ec('0x3d') + _0x2a199b + '\x22\x20username=\x22' + _0x23ed5d + _0x33ec('0x43');
+                        $(_0x56d3c3)[_0x33ec('0x26')](_0x33ec('0x44'))['eq'](0x0)['append'](_0x62cf46), $(_0x56d3c3)[_0x33ec('0x26')](_0x33ec('0x27'))['eq'](0x0)[_0x33ec('0x45')]();
                     }
-                    $(_0x8eeaf8)['parents'](_0x55cd('0x26'))['eq'](0x0)[_0x55cd('0x27')](_0x55cd('0x46'))[_0x55cd('0x47')](''), layer['closeAll']();
+                    $(_0x56d3c3)['parents'](_0x33ec('0x27'))['eq'](0x0)[_0x33ec('0x28')](_0x33ec('0x29'))[_0x33ec('0x11')](''), layer[_0x33ec('0x46')]();
                 });
             }
         } else
-            $('#b-modal-login')['modal'](_0x55cd('0x48'));
+            $(_0x33ec('0x47'))[_0x33ec('0x48')](_0x33ec('0x1'));
     });
 }
-function reply(_0x2ba619) {
-    var _0x448b9e = $(_0x55cd('0x49'))[_0x55cd('0x27')](_0x55cd('0x26'));
-    0x1 == _0x448b9e[_0x55cd('0x11')] && _0x448b9e[_0x55cd('0x45')]();
-    var _0x402d44 = $(_0x2ba619)[_0x55cd('0x29')]('aid'), _0x3c90c = $(_0x2ba619)['attr'](_0x55cd('0x2b')), _0x2ab87e = $(_0x2ba619)[_0x55cd('0x29')](_0x55cd('0x4a')), _0x564476 = _0x55cd('0x4b') + userEmail + '\x22><div\x20class=\x22b-tuzki\x22></div></li><li\x20class=\x22b-submit-button\x22><input\x20type=\x22button\x22\x20value=\x22评\x20论\x22\x20aid=\x22' + _0x402d44 + _0x55cd('0x3a') + _0x3c90c + _0x55cd('0x4c') + _0x2ab87e + '\x22\x20onclick=\x22comment(this)\x22></li><li\x20class=\x22b-clear-float\x22></li></ul></div>';
-    $(_0x2ba619)['parents'](_0x55cd('0x4d'))['eq'](0x0)['append'](_0x564476);
+function reply(_0x3ab51b) {
+    var _0x3f990e = $(_0x33ec('0x3f'))[_0x33ec('0x28')](_0x33ec('0x27'));
+    0x1 == _0x3f990e[_0x33ec('0x14')] && _0x3f990e[_0x33ec('0x45')]();
+    var _0x4e703c = $(_0x3ab51b)[_0x33ec('0x2c')](_0x33ec('0x2b')), _0x19ba59 = $(_0x3ab51b)[_0x33ec('0x2c')](_0x33ec('0x2d')), _0x6d5a93 = $(_0x3ab51b)[_0x33ec('0x2c')](_0x33ec('0x30')), _0x1242b4 = _0x33ec('0x49') + userEmail + '\x22><div\x20class=\x22b-tuzki\x22></div></li><li\x20class=\x22b-submit-button\x22><input\x20type=\x22button\x22\x20value=\x22评\x20论\x22\x20aid=\x22' + _0x4e703c + '\x22\x20pid=\x22' + _0x19ba59 + '\x22\x20username=\x22' + _0x6d5a93 + '\x22\x20onclick=\x22comment(this)\x22></li><li\x20class=\x22b-clear-float\x22></li></ul></div>';
+    $(_0x3ab51b)[_0x33ec('0x26')](_0x33ec('0x4a'))['eq'](0x0)['append'](_0x1242b4);
 }
-function delete_hint(_0x1720c2) {
-    var _0x374834 = $(_0x1720c2)[_0x55cd('0x4e')]();
-    _0x55cd('0x28') != _0x374834 && '请先登录后回复评论' != _0x374834 || ($(_0x1720c2)[_0x55cd('0x4e')](''), $(_0x1720c2)[_0x55cd('0x4f')]('color', '#333'));
+function delete_hint(_0x149f1e) {
+    var _0x46d20d = $(_0x149f1e)[_0x33ec('0x37')]();
+    _0x33ec('0x2a') != _0x46d20d && _0x33ec('0x4b') != _0x46d20d || ($(_0x149f1e)[_0x33ec('0x37')](''), $(_0x149f1e)[_0x33ec('0x4c')](_0x33ec('0x4d'), '#333'));
 }
-$('html')['on'](_0x55cd('0x50'), _0x55cd('0x51'), function (_0x86af7b) {
-    var _0x1715c7 = $(this)[_0x55cd('0x52')](_0x55cd('0x53'));
-    $(this)['parents'](_0x55cd('0x26'))['eq'](0x0)['find'](_0x55cd('0x46'))[_0x55cd('0x54')](), insertHtmlAtCaret(_0x1715c7), $(this)[_0x55cd('0x2c')]('.b-tuzki')['hide'](), tuzkiNumber = 0x1;
+$(_0x33ec('0x11'))['on']('click', _0x33ec('0x4e'), function (_0x4ce6d5) {
+    var _0x3846a9 = $(this)[_0x33ec('0x4f')](_0x33ec('0x50'));
+    $(this)[_0x33ec('0x26')]('.b-box-textarea')['eq'](0x0)[_0x33ec('0x28')](_0x33ec('0x29'))[_0x33ec('0x51')](), insertHtmlAtCaret(_0x3846a9), $(this)[_0x33ec('0x26')](_0x33ec('0x0'))[_0x33ec('0x12')](), tuzkiNumber = 0x1;
 });

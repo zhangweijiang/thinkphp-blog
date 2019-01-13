@@ -6,6 +6,7 @@ use Common\Controller\HomeBaseController;
  */
 class IndexController extends HomeBaseController {
 
+
     // 首页
     public function index(){
 
