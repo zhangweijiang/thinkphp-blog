@@ -1,108 +1,111 @@
-var _0x46d2 = [
-    'parents',
-    '.b-box-textarea',
-    'find',
-    '.b-box-content',
-    '请先登录后发表评论',
-    'aid',
-    'attr',
-    'pid',
-    'val',
-    'load',
-    'username',
+var _0x4762 = [
     'getFullYear',
     'getMonth',
     '&emsp;',
     'getHours',
+    'getMinutes',
     'getSeconds',
     '#b-login-word\x20.b-head_img',
+    'src',
+    '#b-login-word\x20.b-nickname',
     'text',
     '<div\x20class=\x22row\x20b-user\x20b-parent\x22><div\x20class=\x22col-xs-2\x20col-sm-1\x20col-md-1\x20col-lg-1\x20b-pic-col\x22><img\x20title=\x22白俊遥博客\x22\x20alt=\x22白俊遥博客\x22\x20src=\x22',
+    '\x22\x20class=\x22b-user-pic\x22></div><div\x20class=\x22col-xs-10\x20col-sm-11\x20col-md-11\x20col-lg-11\x20b-content-col\x22><p\x20class=\x22b-content\x22><span\x20class=\x22b-user-name\x22>',
     '</span>：',
     '</p><p\x20class=\x22b-date\x22>',
-    '\x20<a\x20onclick=\x22reply(this)\x22\x20username=\x22',
-    '\x22\x20pid=\x22',
     '\x22\x20aid=\x22',
     '\x22\x20href=\x22javascript:;\x22>回复</a></p><div\x20class=\x22b-clear-float\x22></div></div></div>',
     '.b-user-comment',
     'prepend',
     '<div\x20class=\x22row\x20b-user\x20b-child\x22><div\x20class=\x22col-xs-2\x20col-sm-1\x20col-md-1\x20col-lg-1\x20b-pic-col\x22><img\x20title=\x22白俊遥博客\x22\x20alt=\x22白俊遥博客\x22\x20src=\x22',
+    '</span><span\x20class=\x22b-reply\x22>回复</span><span\x20class=\x22b-user-name\x22>',
     '\x20<a\x20onclick=\x22reply(this)\x22\x20pid=\x22',
+    '\x22\x20username=\x22',
     '\x22\x20href=\x22javascript:;\x22>回复</a></li><li\x20class=\x22b-clear-float\x22></li></ul></div>',
     '.b-content-col',
-    'remove',
+    'append',
+    '.b-box-textarea',
+    '.b-box-content',
     'closeAll',
     '#b-modal-login',
     'modal',
+    'remove',
     '<div\x20class=\x22b-box-textarea\x22><div\x20class=\x22b-box-content\x22\x20contenteditable=\x22true\x22\x20onfocus=\x22delete_hint(this)\x22>请先登录后回复评论</div><ul\x20class=\x22b-emote-submit\x22><li\x20class=\x22b-emote\x22><i\x20class=\x22fa\x20fa-smile-o\x22\x20onclick=\x22getTuzki(this)\x22></i><input\x20class=\x22form-control\x20b-email\x22\x20type=\x22text\x22\x20name=\x22email\x22\x20placeholder=\x22接收回复的email地址\x22\x20value=\x22',
-    '.b-cc-first',
+    '\x22><div\x20class=\x22b-tuzki\x22></div></li><li\x20class=\x22b-submit-button\x22><input\x20type=\x22button\x22\x20value=\x22评\x20论\x22\x20aid=\x22',
+    '\x22\x20pid=\x22',
+    '\x22\x20onclick=\x22comment(this)\x22></li><li\x20class=\x22b-clear-float\x22></li></ul></div>',
     '请先登录后回复评论',
     'css',
     'color',
-    '.b-tuzki\x20img',
-    'prop',
-    'outerHTML',
+    '#333',
     'focus',
     '.b-tuzki',
     'show',
     'Kiss',
     'Love',
     'Yeah',
-    '生日快乐',
     '星星闪',
     '正Music',
     '撞墙至死',
-    '互相拍砖',
+    '砍死你',
     '扔桌子',
     '少林寺',
     '什么？',
     '我爱牛奶',
     '在笼子里',
-    'location',
+    '<img\x20src=\x22http://',
+    'host',
+    '/Public/emote/tuzki/t_',
     '.gif\x22\x20title=\x22',
     'html',
     'hide',
     'toString',
     'length',
     'getSelection',
-    'getRangeAt',
     'rangeCount',
+    'getRangeAt',
     'createElement',
     'div',
     'createDocumentFragment',
     'firstChild',
-    'appendChild',
     'insertNode',
-    'cloneRange',
     'setStartAfter',
     'collapse',
     'removeAllRanges',
+    'addRange',
     'selection',
     'Control',
+    'type',
     'createRange',
-    'post'
+    'pasteHTML',
+    'parents',
+    'find',
+    '请先登录后发表评论',
+    'attr',
+    'val',
+    'username'
 ];
-(function (_0x11f2ac, _0x1e7d97) {
-    var _0x49fd06 = function (_0x328ddc) {
-        while (--_0x328ddc) {
-            _0x11f2ac['push'](_0x11f2ac['shift']());
+(function (_0x4b6f87, _0x40459b) {
+    var _0x371a93 = function (_0x4c74a5) {
+        while (--_0x4c74a5) {
+            _0x4b6f87['push'](_0x4b6f87['shift']());
         }
     };
-    _0x49fd06(++_0x1e7d97);
-}(_0x46d2, 0x122));
-var _0x33ec = function (_0x5b670f, _0x1cd648) {
-    _0x5b670f = _0x5b670f - 0x0;
-    var _0x39c870 = _0x46d2[_0x5b670f];
-    return _0x39c870;
+    _0x371a93(++_0x40459b);
+}(_0x4762, 0x1d1));
+var _0x3e4d = function (_0x347c8c, _0x583c86) {
+    _0x347c8c = _0x347c8c - 0x0;
+    var _0x31fd27 = _0x4762[_0x347c8c];
+    return _0x31fd27;
 };
-function getTuzki(_0x55af5a) {
-    var _0x2cb9e6 = $(_0x55af5a)['siblings'](_0x33ec('0x0'));
+function getTuzki(_0x1c8190) {
+    var _0x506bf4 = $(_0x1c8190)['siblings'](_0x3e4d('0x0'));
     if (tuzkiNumber) {
-        _0x2cb9e6[_0x33ec('0x1')]();
-        for (var _0x2a8c83 = [
-                    _0x33ec('0x2'),
-                    _0x33ec('0x3'),
-                    _0x33ec('0x4'),
+        _0x506bf4[_0x3e4d('0x1')]();
+        for (var _0x2ffc9c = [
+                    _0x3e4d('0x2'),
+                    _0x3e4d('0x3'),
+                    _0x3e4d('0x4'),
                     '啊！',
                     '背扭',
                     '顶',
@@ -113,98 +116,98 @@ function getTuzki(_0x55af5a) {
                     '鲁拉',
                     '拍砖',
                     '揉脸',
-                    _0x33ec('0x5'),
+                    '生日快乐',
                     '摊手',
                     '睡觉',
                     '瘫坐',
                     '无聊',
-                    _0x33ec('0x6'),
+                    _0x3e4d('0x5'),
                     '旋转',
                     '也不行',
                     '郁闷',
-                    _0x33ec('0x7'),
+                    _0x3e4d('0x6'),
                     '抓墙',
-                    _0x33ec('0x8'),
+                    _0x3e4d('0x7'),
                     '歪头',
                     '戳眼',
                     '飘过',
-                    _0x33ec('0x9'),
-                    '砍死你',
-                    _0x33ec('0xa'),
-                    _0x33ec('0xb'),
-                    _0x33ec('0xc'),
+                    '互相拍砖',
+                    _0x3e4d('0x8'),
+                    _0x3e4d('0x9'),
+                    _0x3e4d('0xa'),
+                    _0x3e4d('0xb'),
                     '转头',
-                    _0x33ec('0xd'),
+                    _0x3e4d('0xc'),
                     '我踢',
                     '摇晃',
                     '晕厥',
-                    _0x33ec('0xe'),
+                    _0x3e4d('0xd'),
                     '震荡'
-                ], _0x375c31 = '', _0x115cf0 = 0x1; _0x115cf0 < 0x29; _0x115cf0++) {
-            var _0x488ffb = formatNum(_0x115cf0, 0x4);
-            _0x375c31 += '<img\x20src=\x22http://' + window[_0x33ec('0xf')]['host'] + '/Public/emote/tuzki/t_' + _0x488ffb + _0x33ec('0x10') + _0x2a8c83[_0x115cf0 - 0x1] + '\x22\x20alt=\x22白俊遥博客\x22>';
+                ], _0x1d9956 = '', _0x35b1b2 = 0x1; _0x35b1b2 < 0x29; _0x35b1b2++) {
+            var _0x246f5f = formatNum(_0x35b1b2, 0x4);
+            _0x1d9956 += _0x3e4d('0xe') + window['location'][_0x3e4d('0xf')] + _0x3e4d('0x10') + _0x246f5f + _0x3e4d('0x11') + _0x2ffc9c[_0x35b1b2 - 0x1] + '\x22\x20alt=\x22白俊遥博客\x22>';
         }
-        _0x2cb9e6[_0x33ec('0x11')](_0x375c31), tuzkiNumber = 0x0;
+        _0x506bf4[_0x3e4d('0x12')](_0x1d9956), tuzkiNumber = 0x0;
     } else
-        _0x2cb9e6[_0x33ec('0x12')](), tuzkiNumber = 0x1;
+        _0x506bf4[_0x3e4d('0x13')](), tuzkiNumber = 0x1;
 }
-function formatNum(_0x4a7747, _0x197f44) {
-    for (var _0x99cc28 = '', _0x4acca1 = 0x1; _0x4acca1 <= _0x197f44 - _0x4a7747[_0x33ec('0x13')]()[_0x33ec('0x14')]; _0x4acca1++)
-        _0x99cc28 += '0';
-    return _0x99cc28 + _0x4a7747;
+function formatNum(_0x4035ae, _0x5372bd) {
+    for (var _0x2e0e68 = '', _0x250d94 = 0x1; _0x250d94 <= _0x5372bd - _0x4035ae[_0x3e4d('0x14')]()[_0x3e4d('0x15')]; _0x250d94++)
+        _0x2e0e68 += '0';
+    return _0x2e0e68 + _0x4035ae;
 }
-function insertHtmlAtCaret(_0x494c40) {
-    var _0x458227, _0x124b6c;
-    if (window[_0x33ec('0x15')]) {
-        if (_0x458227 = window['getSelection'](), _0x458227[_0x33ec('0x16')] && _0x458227[_0x33ec('0x17')]) {
-            _0x124b6c = _0x458227['getRangeAt'](0x0), _0x124b6c['deleteContents']();
-            var _0x235110 = document[_0x33ec('0x18')](_0x33ec('0x19'));
-            _0x235110['innerHTML'] = _0x494c40;
-            for (var _0x2e6bd1, _0x20bb22, _0x41bf97 = document[_0x33ec('0x1a')](); _0x2e6bd1 = _0x235110[_0x33ec('0x1b')];)
-                _0x20bb22 = _0x41bf97[_0x33ec('0x1c')](_0x2e6bd1);
-            _0x124b6c[_0x33ec('0x1d')](_0x41bf97), _0x20bb22 && (_0x124b6c = _0x124b6c[_0x33ec('0x1e')](), _0x124b6c[_0x33ec('0x1f')](_0x20bb22), _0x124b6c[_0x33ec('0x20')](!0x0), _0x458227[_0x33ec('0x21')](), _0x458227['addRange'](_0x124b6c));
+function insertHtmlAtCaret(_0x2e633a) {
+    var _0x19771e, _0xcbb0c2;
+    if (window[_0x3e4d('0x16')]) {
+        if (_0x19771e = window[_0x3e4d('0x16')](), _0x19771e['getRangeAt'] && _0x19771e[_0x3e4d('0x17')]) {
+            _0xcbb0c2 = _0x19771e[_0x3e4d('0x18')](0x0), _0xcbb0c2['deleteContents']();
+            var _0x9d80bf = document[_0x3e4d('0x19')](_0x3e4d('0x1a'));
+            _0x9d80bf['innerHTML'] = _0x2e633a;
+            for (var _0x127623, _0x469a28, _0x2b1ff1 = document[_0x3e4d('0x1b')](); _0x127623 = _0x9d80bf[_0x3e4d('0x1c')];)
+                _0x469a28 = _0x2b1ff1['appendChild'](_0x127623);
+            _0xcbb0c2[_0x3e4d('0x1d')](_0x2b1ff1), _0x469a28 && (_0xcbb0c2 = _0xcbb0c2['cloneRange'](), _0xcbb0c2[_0x3e4d('0x1e')](_0x469a28), _0xcbb0c2[_0x3e4d('0x1f')](!0x0), _0x19771e[_0x3e4d('0x20')](), _0x19771e[_0x3e4d('0x21')](_0xcbb0c2));
         }
     } else
-        document[_0x33ec('0x22')] && _0x33ec('0x23') != document[_0x33ec('0x22')]['type'] && document[_0x33ec('0x22')][_0x33ec('0x24')]()['pasteHTML'](_0x494c40);
+        document[_0x3e4d('0x22')] && _0x3e4d('0x23') != document[_0x3e4d('0x22')][_0x3e4d('0x24')] && document['selection'][_0x3e4d('0x25')]()[_0x3e4d('0x26')](_0x2e633a);
 }
-function comment(_0x56d3c3) {
-    $[_0x33ec('0x25')](check_login, function (_0xe1a052) {
-        if (0x1 == _0xe1a052) {
-            var _0x3db169 = $(_0x56d3c3)[_0x33ec('0x26')](_0x33ec('0x27'))['eq'](0x0)[_0x33ec('0x28')](_0x33ec('0x29'))[_0x33ec('0x11')]();
-            if ('' != _0x3db169 && _0x33ec('0x2a') != _0x3db169) {
-                var _0x2a199b = $(_0x56d3c3)['attr'](_0x33ec('0x2b')), _0x54156d = $(_0x56d3c3)[_0x33ec('0x2c')](_0x33ec('0x2d')), _0x57f7e9 = $(_0x56d3c3)[_0x33ec('0x26')]('.b-box-textarea')['eq'](0x0)[_0x33ec('0x28')]('input[name=\x27email\x27]')[_0x33ec('0x2e')](), _0x23ed5d = {
-                        'aid': _0x2a199b,
-                        'pid': _0x54156d,
-                        'content': _0x3db169,
-                        'email': _0x57f7e9
+function comment(_0x41c1c5) {
+    $['post'](check_login, function (_0x2bb7db) {
+        if (0x1 == _0x2bb7db) {
+            var _0x1dd910 = $(_0x41c1c5)[_0x3e4d('0x27')]('.b-box-textarea')['eq'](0x0)[_0x3e4d('0x28')]('.b-box-content')['html']();
+            if ('' != _0x1dd910 && _0x3e4d('0x29') != _0x1dd910) {
+                var _0x1be865 = $(_0x41c1c5)[_0x3e4d('0x2a')]('aid'), _0xe35c6e = $(_0x41c1c5)['attr']('pid'), _0x97e78 = $(_0x41c1c5)[_0x3e4d('0x27')]('.b-box-textarea')['eq'](0x0)[_0x3e4d('0x28')]('input[name=\x27email\x27]')[_0x3e4d('0x2b')](), _0x4887a3 = {
+                        'aid': _0x1be865,
+                        'pid': _0xe35c6e,
+                        'content': _0x1dd910,
+                        'email': _0x97e78
                     };
-                layer[_0x33ec('0x2f')](0x1), $[_0x33ec('0x25')](ajaxCommentUrl, _0x23ed5d, function (_0xe1a052) {
-                    var _0x57f7e9 = _0xe1a052, _0x23ed5d = $(_0x56d3c3)[_0x33ec('0x2c')](_0x33ec('0x30')), _0x41c12a = new Date(), _0x304737 = _0x41c12a[_0x33ec('0x31')]() + '-' + (_0x41c12a[_0x33ec('0x32')]() + 0x1 < 0xa ? '0' : '') + (_0x41c12a[_0x33ec('0x32')]() + 0x1) + '-' + (_0x41c12a['getDate']() < 0xa ? '0' : '') + _0x41c12a['getDate']() + _0x33ec('0x33') + (_0x41c12a[_0x33ec('0x34')]() < 0xa ? '0' : '') + _0x41c12a[_0x33ec('0x34')]() + ':' + (_0x41c12a['getMinutes']() < 0xa ? '0' : '') + _0x41c12a['getMinutes']() + ':' + (_0x41c12a[_0x33ec('0x35')]() < 0xa ? '0' : '') + _0x41c12a[_0x33ec('0x35')](), _0x271638 = $(_0x33ec('0x36'))[_0x33ec('0x2c')]('src'), _0x4596a6 = $('#b-login-word\x20.b-nickname')[_0x33ec('0x37')]();
-                    if (0x0 == _0x54156d) {
-                        var _0x62cf46 = _0x33ec('0x38') + _0x271638 + '\x22\x20class=\x22b-user-pic\x22></div><div\x20class=\x22col-xs-10\x20col-sm-11\x20col-md-11\x20col-lg-11\x20b-content-col\x22><p\x20class=\x22b-content\x22><span\x20class=\x22b-user-name\x22>' + _0x4596a6 + _0x33ec('0x39') + _0x3db169 + _0x33ec('0x3a') + _0x304737 + _0x33ec('0x3b') + _0x4596a6 + _0x33ec('0x3c') + _0x57f7e9 + _0x33ec('0x3d') + _0x2a199b + _0x33ec('0x3e');
-                        $(_0x33ec('0x3f'))[_0x33ec('0x40')](_0x62cf46);
+                layer['load'](0x1), $['post'](ajaxCommentUrl, _0x4887a3, function (_0x2bb7db) {
+                    var _0x97e78 = _0x2bb7db, _0x4887a3 = $(_0x41c1c5)[_0x3e4d('0x2a')](_0x3e4d('0x2c')), _0xda44f0 = new Date(), _0x331f50 = _0xda44f0[_0x3e4d('0x2d')]() + '-' + (_0xda44f0[_0x3e4d('0x2e')]() + 0x1 < 0xa ? '0' : '') + (_0xda44f0['getMonth']() + 0x1) + '-' + (_0xda44f0['getDate']() < 0xa ? '0' : '') + _0xda44f0['getDate']() + _0x3e4d('0x2f') + (_0xda44f0[_0x3e4d('0x30')]() < 0xa ? '0' : '') + _0xda44f0[_0x3e4d('0x30')]() + ':' + (_0xda44f0[_0x3e4d('0x31')]() < 0xa ? '0' : '') + _0xda44f0[_0x3e4d('0x31')]() + ':' + (_0xda44f0[_0x3e4d('0x32')]() < 0xa ? '0' : '') + _0xda44f0[_0x3e4d('0x32')](), _0xceb4c3 = $(_0x3e4d('0x33'))['attr'](_0x3e4d('0x34')), _0x329725 = $(_0x3e4d('0x35'))[_0x3e4d('0x36')]();
+                    if (0x0 == _0xe35c6e) {
+                        var _0x55e769 = _0x3e4d('0x37') + _0xceb4c3 + _0x3e4d('0x38') + _0x329725 + _0x3e4d('0x39') + _0x1dd910 + _0x3e4d('0x3a') + _0x331f50 + '\x20<a\x20onclick=\x22reply(this)\x22\x20username=\x22' + _0x329725 + '\x22\x20pid=\x22' + _0x97e78 + _0x3e4d('0x3b') + _0x1be865 + _0x3e4d('0x3c');
+                        $(_0x3e4d('0x3d'))[_0x3e4d('0x3e')](_0x55e769);
                     } else {
-                        var _0x62cf46 = _0x33ec('0x41') + _0x271638 + '\x22\x20class=\x22b-user-pic\x22></div><ul\x20class=\x22col-xs-10\x20col-sm-11\x20col-md-11\x20col-lg-11\x20b-content-col\x22><li\x20class=\x22b-content\x22><span\x20class=\x22b-reply-name\x22>' + _0x4596a6 + '</span><span\x20class=\x22b-reply\x22>回复</span><span\x20class=\x22b-user-name\x22>' + _0x23ed5d + _0x33ec('0x39') + _0x3db169 + '</li><li\x20class=\x22b-date\x22>' + _0x304737 + _0x33ec('0x42') + _0x57f7e9 + _0x33ec('0x3d') + _0x2a199b + '\x22\x20username=\x22' + _0x23ed5d + _0x33ec('0x43');
-                        $(_0x56d3c3)[_0x33ec('0x26')](_0x33ec('0x44'))['eq'](0x0)['append'](_0x62cf46), $(_0x56d3c3)[_0x33ec('0x26')](_0x33ec('0x27'))['eq'](0x0)[_0x33ec('0x45')]();
+                        var _0x55e769 = _0x3e4d('0x3f') + _0xceb4c3 + '\x22\x20class=\x22b-user-pic\x22></div><ul\x20class=\x22col-xs-10\x20col-sm-11\x20col-md-11\x20col-lg-11\x20b-content-col\x22><li\x20class=\x22b-content\x22><span\x20class=\x22b-reply-name\x22>' + _0x329725 + _0x3e4d('0x40') + _0x4887a3 + _0x3e4d('0x39') + _0x1dd910 + '</li><li\x20class=\x22b-date\x22>' + _0x331f50 + _0x3e4d('0x41') + _0x97e78 + '\x22\x20aid=\x22' + _0x1be865 + _0x3e4d('0x42') + _0x4887a3 + _0x3e4d('0x43');
+                        $(_0x41c1c5)[_0x3e4d('0x27')](_0x3e4d('0x44'))['eq'](0x0)[_0x3e4d('0x45')](_0x55e769), $(_0x41c1c5)[_0x3e4d('0x27')]('.b-box-textarea')['eq'](0x0)['remove']();
                     }
-                    $(_0x56d3c3)['parents'](_0x33ec('0x27'))['eq'](0x0)[_0x33ec('0x28')](_0x33ec('0x29'))[_0x33ec('0x11')](''), layer[_0x33ec('0x46')]();
+                    $(_0x41c1c5)['parents'](_0x3e4d('0x46'))['eq'](0x0)[_0x3e4d('0x28')](_0x3e4d('0x47'))[_0x3e4d('0x12')](''), layer[_0x3e4d('0x48')]();
                 });
             }
         } else
-            $(_0x33ec('0x47'))[_0x33ec('0x48')](_0x33ec('0x1'));
+            $(_0x3e4d('0x49'))[_0x3e4d('0x4a')]('show');
     });
 }
-function reply(_0x3ab51b) {
-    var _0x3f990e = $(_0x33ec('0x3f'))[_0x33ec('0x28')](_0x33ec('0x27'));
-    0x1 == _0x3f990e[_0x33ec('0x14')] && _0x3f990e[_0x33ec('0x45')]();
-    var _0x4e703c = $(_0x3ab51b)[_0x33ec('0x2c')](_0x33ec('0x2b')), _0x19ba59 = $(_0x3ab51b)[_0x33ec('0x2c')](_0x33ec('0x2d')), _0x6d5a93 = $(_0x3ab51b)[_0x33ec('0x2c')](_0x33ec('0x30')), _0x1242b4 = _0x33ec('0x49') + userEmail + '\x22><div\x20class=\x22b-tuzki\x22></div></li><li\x20class=\x22b-submit-button\x22><input\x20type=\x22button\x22\x20value=\x22评\x20论\x22\x20aid=\x22' + _0x4e703c + '\x22\x20pid=\x22' + _0x19ba59 + '\x22\x20username=\x22' + _0x6d5a93 + '\x22\x20onclick=\x22comment(this)\x22></li><li\x20class=\x22b-clear-float\x22></li></ul></div>';
-    $(_0x3ab51b)[_0x33ec('0x26')](_0x33ec('0x4a'))['eq'](0x0)['append'](_0x1242b4);
+function reply(_0x4860e1) {
+    var _0x13ebae = $(_0x3e4d('0x3d'))[_0x3e4d('0x28')](_0x3e4d('0x46'));
+    0x1 == _0x13ebae[_0x3e4d('0x15')] && _0x13ebae[_0x3e4d('0x4b')]();
+    var _0x390c25 = $(_0x4860e1)[_0x3e4d('0x2a')]('aid'), _0x51a13c = $(_0x4860e1)[_0x3e4d('0x2a')]('pid'), _0x31cca1 = $(_0x4860e1)[_0x3e4d('0x2a')](_0x3e4d('0x2c')), _0x380ebf = _0x3e4d('0x4c') + userEmail + _0x3e4d('0x4d') + _0x390c25 + _0x3e4d('0x4e') + _0x51a13c + _0x3e4d('0x42') + _0x31cca1 + _0x3e4d('0x4f');
+    $(_0x4860e1)['parents']('.b-cc-first')['eq'](0x0)[_0x3e4d('0x45')](_0x380ebf);
 }
-function delete_hint(_0x149f1e) {
-    var _0x46d20d = $(_0x149f1e)[_0x33ec('0x37')]();
-    _0x33ec('0x2a') != _0x46d20d && _0x33ec('0x4b') != _0x46d20d || ($(_0x149f1e)[_0x33ec('0x37')](''), $(_0x149f1e)[_0x33ec('0x4c')](_0x33ec('0x4d'), '#333'));
+function delete_hint(_0x32ae51) {
+    var _0x1be22c = $(_0x32ae51)[_0x3e4d('0x36')]();
+    '请先登录后发表评论' != _0x1be22c && _0x3e4d('0x50') != _0x1be22c || ($(_0x32ae51)[_0x3e4d('0x36')](''), $(_0x32ae51)[_0x3e4d('0x51')](_0x3e4d('0x52'), _0x3e4d('0x53')));
 }
-$(_0x33ec('0x11'))['on']('click', _0x33ec('0x4e'), function (_0x4ce6d5) {
-    var _0x3846a9 = $(this)[_0x33ec('0x4f')](_0x33ec('0x50'));
-    $(this)[_0x33ec('0x26')]('.b-box-textarea')['eq'](0x0)[_0x33ec('0x28')](_0x33ec('0x29'))[_0x33ec('0x51')](), insertHtmlAtCaret(_0x3846a9), $(this)[_0x33ec('0x26')](_0x33ec('0x0'))[_0x33ec('0x12')](), tuzkiNumber = 0x1;
+$('html')['on']('click', '.b-tuzki\x20img', function (_0x37a2ef) {
+    var _0x31e3d1 = $(this)['prop']('outerHTML');
+    $(this)[_0x3e4d('0x27')]('.b-box-textarea')['eq'](0x0)[_0x3e4d('0x28')]('.b-box-content')[_0x3e4d('0x54')](), insertHtmlAtCaret(_0x31e3d1), $(this)[_0x3e4d('0x27')]('.b-tuzki')[_0x3e4d('0x13')](), tuzkiNumber = 0x1;
 });

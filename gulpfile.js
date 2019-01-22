@@ -9,6 +9,7 @@ var gulp        = require('gulp'),
     copy        = require('gulp-contrib-copy'),
 	sourcemaps  = require('gulp-sourcemaps'),
 	javascriptObfuscator = require("gulp-javascript-obfuscator"),//js混淆
+	concat      = require('gulp-concat');
 	del         = require('del'),
     browserSync = require('browser-sync').create(),
     reload      = browserSync.reload;
@@ -45,7 +46,6 @@ gulp.task('js', function() {
             stringArray: true,
 			sourceMap:true
        }))
-    .pipe(gulp.dest(dist));
 });
 
 // 压缩全部html
@@ -102,4 +102,40 @@ gulp.task('server', function() {
 });
 
 // 监听事件
-gulp.task('default', ['css', 'js', 'image', 'html', 'copy', 'server'])
+gulp.task('default', ['css', 'js', 'image', 'html', 'copy', 'server']);
+
+gulp.task('concat', function(){
+    gulp.src([
+    	"Public/static/js/jquery-2.0.0.min.js",
+    	"Public/static/bootstrap-3.3.5/js/bootstrap.min.js",
+    	"Public/static/pace/pace.min.js",
+    	"Template/default/Home/Public/js/index.js"
+    	])
+	    /*.pipe(uglify({
+	      mangle: true,//类型：Boolean 默认：true 是否修改变量名
+	      compress: true,//类型：Boolean 默认：true 是否完全压缩
+	    }))*/
+	    .pipe(javascriptObfuscator({
+            compact: true, //类型：Boolean 默认：true 是否完全压缩
+            domainLock: [".zhangweijiang.com"],
+            mangle: false, //类型：Boolean 默认：true 是否修改变量名
+            rotateStringArray: true,
+            //selfDefending: true, //类型: Boolean 默认：true
+            stringArray: true,
+			//sourceMap:true
+       }))
+		.pipe(concat('app.js'))
+		.pipe(gulp.dest("./Public/static/js/"));
+
+		 gulp.src([
+		"Public/static/font-awesome-4.4.0/css/font-awesome.min.css",
+    	"Public/static/bootstrap-3.3.5/css/bootstrap.min.css",
+    	"Public/static/bootstrap-3.3.5/css/bootstrap-theme.min.css",
+    	"Public/static/css/main.css",
+    	"Public/static/css/animate.css",
+    	"Template/default/Home/Public/css/index.css",
+    	])
+	    .pipe(minifyCss())
+		.pipe(concat('app.css'))
+		.pipe(gulp.dest("./Public/static/css/"));
+});
